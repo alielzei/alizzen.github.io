@@ -19,8 +19,18 @@ body{
 .header{
 	text-align: center;
 	display: block;
-	max-width: 480px;
+	max-width: 90%;
 	margin: 0 auto;
+	border-bottom: 1px solid black;
+}
+
+.header > *{
+	padding: 0;
+	margin: 0;
+}
+
+.header > h1{
+	margin-bottom: 10px;
 }
 
 .header > img{
@@ -31,11 +41,11 @@ body{
 }
 
 .header > .tags{
-	margin-bottom: 10px;
+	margin-bottom: 30px;
 }
 
 .header > .tags > span{
-	padding: 2px 10px 3px 10px;
+	padding: 2px 10px;
 	border-radius: 30px;
 }
 
@@ -58,9 +68,11 @@ body{
 }
 
 .contact{
+	position: relative;
 	display: block;
 	width: 90%;
 	margin: 0 auto;
+	padding-bottom: 10px;
 }
 
 .contact span{
@@ -72,8 +84,13 @@ body{
 	display: block;
 	font-size: 20px;
 	width: 100%;
-	max-width: 100%;
 	border: 0.5px solid grey;
+	margin: 0 auto;
+}
+
+.contact textarea{
+	height: 200px;
+	resize: none;
 }
 
 .contact input[type='submit']{
@@ -84,13 +101,33 @@ body{
 	border: none;
 	font-size: 20px;
 	cursor: pointer;
+	box-shadow: 2px 2px 5px grey;
 }
 
-@media screen and (max-width: 700px){
+@media screen and (max-width: 600px){
 	.header > .tags > span{
 		display: block;	
 		width: 150px;
 		margin: 5px 0;
 		margin: 10px auto;
 	}
+}
+
+.message{
+	text-align: center;
+	border-radius: 20px;
+	margin: 20px 0;
+	display: none;
+}
+
+.success{
+	background-color: lightgreen;
+	color: green;
+	border: 2px solid green;
+}
+
+.fail{
+	background-color: tomato;
+	color: darkred;
+	border: 2px solid darkred;
 }

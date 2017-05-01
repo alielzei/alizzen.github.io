@@ -21,27 +21,35 @@
 
 		<div class="contact">
 			<h1>Contact:</h1>
+			
 			<form>
+
 				<span>First &amp; Last Name</span>
-				<input type="text" name="">
+				<input type="text" id="fullName" name="full-name">
+
 				<span>E-mail</span>
-				<input type="text" name="">
+				<input type="text" id="email" name="e-mail">
+
 				<span>Message</span>
-				<textarea></textarea>
+				<textarea name="text" id="message"></textarea>
+
 				<input type="submit" value="SEND">
+
 			</form>
+
+			<div class="success message">
+				<p>Your message has been succesfully sent!</p>
+			</div>
+
+			<div class="fail message">
+				<p>Unable to send the message right now, try again later.</p>
+			</div>
+
 		</div>
 
+		
 	</div>
-
 	<script type="text/javascript" src="jquery-3.2.0.js"></script>
-	<script type="text/javascript" src="jquery.autoexpand.js"></script>
-	<script type="text/javascript">
-		function main(){
-			$('textarea').autoExpand();
-		}
-		$(document).ready(main);
-	</script>
-
+	<script type="text/javascript" src="app.js"></script>
 </body>
 </html>
