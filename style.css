@@ -81,10 +81,11 @@ body{
 }
 
 .contact input[type='text'], .contact textarea{
+	padding: 0;
 	display: block;
 	font-size: 20px;
 	width: 100%;
-	border: 0.5px solid grey;
+	border: 1px solid grey;
 	margin: 0 auto;
 }
 
