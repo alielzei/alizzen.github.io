@@ -21,7 +21,7 @@ body{
 	display: block;
 	max-width: 90%;
 	margin: 0 auto;
-	border-bottom: 1px solid black;
+	border-bottom: 1px solid rgb(62,62,62);
 }
 
 .header > *{
@@ -118,6 +118,7 @@ body{
 	border-radius: 20px;
 	margin: 20px 0;
 	display: none;
+	padding: 0 10px;
 }
 
 .success{
